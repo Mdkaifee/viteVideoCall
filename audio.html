@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebRTC Audio Call</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h2>1. Start Audio</h2>
+    <p><strong>Local Audio:</strong> (you won't hear yourself)</p>
+    <audio id="localAudio" autoplay muted></audio>
+
+    <p><strong>Remote Audio:</strong></p>
+    <audio id="remoteAudio" autoplay></audio>
+
+    <button id="audioButton">Start Microphone</button>
+
+    <h2>2. Create a new Call</h2>
+    <button id="callButton" disabled>Create Call</button>
+
+    <h2>3. Join a Call</h2>
+    <input id="callInput" />
+    <button id="answerButton" disabled>Answer</button>
+
+    <h2>4. Hangup</h2>
+    <button id="hangupButton" disabled>Hangup</button>
+
+    <script type="module" src="./audio.js"></script>
+  </body>
+</html>

@@ -2,40 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebRTC Demo</title>
+    <title>Call App</title>
+    <style>
+      body {
+        background: #121b22;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <h2>1. Start your Webcam</h2>
-    <div class="videos">
-      <span>
-        <h3>Local Stream</h3>
-        <video id="webcamVideo" autoplay playsinline></video>
-      </span>
-      <span>
-        <h3>Remote Stream</h3>
-        <video id="remoteVideo" autoplay playsinline></video>
-      </span>
-
-
-    </div>
-
-    <button id="webcamButton">Start webcam</button>
-    <h2>2. Create a new Call</h2>
-    <button id="callButton" disabled>Create Call (offer)</button>
-
-    <h2>3. Join a Call</h2>
-    <p>Answer the call from a different browser window or device</p>
-    
-    <input id="callInput" />
-    <button id="answerButton" disabled>Answer</button>
-
-    <h2>4. Hangup</h2>
-
-    <button id="hangupButton" disabled>Hangup</button>
-
-    <script type="module" src="/main.js"></script>
-
+    <h1>Select Call Type</h1>
+    <button onclick="location.href='video.html'">Video Call</button>
+    <button onclick="location.href='audio.html'">Audio Call</button>
   </body>
 </html>
